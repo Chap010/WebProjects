@@ -1,0 +1,190 @@
+<html>
+  <body>
+  <!--Headers tag better than div-->
+   <header>
+      <h1>Navigational Links</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+   </header>
+
+  <!-- div same as headers-->
+  <div id="header">                     <!-- div same as headers-->
+    <h1>Navigational Links</h1>
+    <div id="nav">                      <!-- div same as headers-->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#posts">Posts</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>                              <!-- div same as headers-->
+  </div>                                <!-- div same as headers-->
+
+
+   <!-- /////////////////////////////////////////////////////////////////////////////////////////-->
+   <!-- main and footers vs divs-->
+
+   <body>
+    <header>
+      <h1>Navigational Links</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div id="main">                          <!--divs main equal to main tag-->
+      <p>This is where the main content will go once the page is built out!</p>
+    </div>                                   <!--divs main equal to main tag-->
+    
+    <div id="footer">                        <!--divs footer equal to footer tag-->
+      <p>Contact me at +1 234 567 8910 </p>
+    </div>                                   <!--divs footer equal to footer tag-->
+    
+
+<!-- div id header change to main tag--> <!--divs id footer change to footer tag-->
+
+<header>  <!-- div id header change to main tag-->
+  <h1>Navigational Links</h1>
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#posts">Posts</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>       <!-- div id header change to main tag-->
+<main>
+  <p>This is where the main content will go once the page is built out!</p>
+<main>
+
+<footer>       <!--divs footer change to footer tag-->
+  <p>Contact me at +1 234 567 8910 </p>
+<footer>       <!--divs footer change to footer tag-->
+  
+
+     <!-- /////////////////////////////////////////////////////////////////////////////////////////-->
+     <!-- Article and Section tags vs divs  -->
+     <header>
+      <h1>Navigational Links</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#posts">Posts</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <div id="section">                        <!--div section-->
+        <h2>Facts About Dogs</h2>
+        <p>
+        Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.
+        </p>
+      </div>                                   <!--div section-->
+    </main>
+    
+    <footer>
+      <p>Contact me at +1 234 567 8910 </p>
+    </footer>
+                   <!-- divs tags to Article and Section tags better  -->
+                   <main>
+                    <section>                   <!--div id "section" to section tag-->
+                      <article>                 <!--added article tag-->
+                      <h2>Facts About Dogs</h2>
+                      <p>
+                      Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.
+                      </p>
+                      </article>      <!--closing article tag-->
+                    </section>        <!--close section tag-->
+                                                >
+                  </main>
+                  
+                  <footer>
+                    <p>Contact me at +1 234 567 8910 </p>
+                  </footer>
+
+     <!-- /////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- divs id aside  tag vs aside tag-->
+<!-- aside tag used for side notes ,quote ,comments ,endnotes -->
+
+<main>
+  <section>
+    <article>
+      <h2>Facts About Dogs</h2>
+      <p>
+      Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.
+      </p>
+    </article>
+    <div id="aside">                     <!--div id aside tag -->
+      <p>A study was conducted on dogs being away from their owners for varying hours and the studies show that dogs who were away from their owners the longest showed the greatest amount of affection!
+      </p> 
+    </div>                               <!--closing div aside id tag-->
+  </section>   
+</main>
+ <footer>
+  <p>Contact me at +1 234 567 8910 </p>
+</footer>
+
+<!-- divs id aside  tag To aside tag-->
+<main>
+  <section>
+    <article>
+      <h2>Facts About Dogs</h2>
+      <p>
+      Dogs have a sense of time. It's been proven that they know the difference between a hour and five. If conditioned to, they can predict future events, such as regular walk times.
+      </p>
+    </article>
+    <aside>                   <!-- addded div id tag to aside tag -->
+      <p>A study was conducted on dogs being away from their owners for varying hours and the studies show that dogs who were away from their owners the longest showed the greatest amount of affection!
+      </p> 
+   </aside>                   <!--closing aside tag-->
+  </section>   
+</main>
+<footer>
+  <p>Contact me at +1 234 567 8910 </p>
+</footer>
+     <!-- /////////////////////////////////////////////////////////////////////////////////////////-->
+<!--Figure and Figcaption tags  -->
+<!-- figure tag to add images or media to the section or article tags -->
+<!-- figcaption is describing the image for readers "this will show on the page" -->
+
+<!-- need to add a img src to add any media -->
+<figure>
+  <img src="https://content.codecademy.com/courses/SemanticHTML/dogimage.jpeg"/>
+  <figcaption>a dog image</figcaption>
+  </figure>
+
+     <!-- /////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- Audio and Attributes tags--> 
+<!-- audio tag is to add audio -->
+<!-- source tag is to link the media -->
+<!-- specified the type in this case type="audio/mp3" -->
+<!-- controls: automatically displays the audio controls into the browser such as play and mute. -->
+<!-- no close tag needed -->
+<audio autoplay controls></audio>   <!--to auto play video or to not play video remove autoplay-->
+<source src="https://content.codecademy.com/courses/SemanticHTML/dogBarking.mp3" type="audio/mp3">
+
+   <!-- /////////////////////////////////////////////////////////////////////////////////////////-->
+   <!-- Video and Embeded tags--> 
+   <!-- video src tag is to play videos only for videos-->
+   <!-- embed tag autoplays gif ,media for browsers that have embed button you can use for any type of media -->
+   <!-- embed src doesnt have closing tag -->
+
+   <video src="https://content.codecademy.com/courses/SemanticHTML/dog-video.mp4" controls></video>
+   <embed src="https://content.codecademy.com/courses/SemanticHTML/dog-on-beach.gif">
+      
+      
+
+
+
+
+  </body>
+</html>
